@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    Body{
+    background-color: yellow;
+    }
+
+</style>
+
+<form action = "/messages" method = "post">
+    <input type = "text" placeholder = "Write a message" name = "createMessage"/>
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+Messages by {{createUser}}:
+
+{{#createMessage}}
+    <b>{{note}}</b>
+{{/createMessage}}
+
+<br>
+
+</body>
+</html>
